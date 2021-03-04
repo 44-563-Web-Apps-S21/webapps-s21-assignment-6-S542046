@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<h2>Nuvvala Computers</h2>
+<h2>Sudhagoni Computers</h2>
 
 <form>
     <label for="form1_firstelement">Enter a number </label>
@@ -41,21 +41,21 @@
 <script> 
 
 function permutations(){
-    var mn = document.getElementById("form1_firstelement").value;
-        var nm = document.getElementById("form1_secondelement").value;
+    var sa = document.getElementById("form1_firstelement").value;
+        var a = document.getElementById("form1_secondelement").value;
         var product = 1;
-        var d = mn;
+        var d = sa;
         out = document.getElementById("result")
-        for (var i = mn-1; i > 0; i--) {
-            mn = mn * i;
+        for (var i = sa-1; i > 0; i--) {
+            sa = sa * i;
         }
-        var mc = d - nm;
-        for (j = mc-1 ; j > 0; j--) {
-            mc = mc * j;
+        var rcb = d - a;
+        for (j = rcb-1 ; j > 0; j--) {
+            rcb = rcb * j;
         }
-        product = mn / mc;
+        product = sa / rcb;
         console.log(product);
-        out.innerHTML = d + " permute " + nm + " should be " + product;
+        out.innerHTML = d + " permute " + a + " should be " + product;
     
 }
 </script>
